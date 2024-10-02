@@ -1,0 +1,335 @@
+  
+  /* ----------------------about------------------- */
+
+#about-section {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+  }
+  #about-container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .infomation-content-div {
+    width:1300px;
+    height:200px;
+/*     background:red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+  /*   gap: 10px; 각 아이템 사이의 간격 */
+  border: 1px solid white;
+border-radius: 10px;
+   box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+background-color: white;
+
+  }
+.infomation-list-div {
+    width: 100%; /* 각 박스의 너비를 열의 수에 따라 설정 */
+    height: 100%; /* 각 박스의 높이를 행의 수에 따라 설정 */
+    text-align: center;
+ display: flex; /* Flexbox 레이아웃 사용 */
+/*   justify-content: center;  */
+  align-items: center; 
+/*     background:blue; */
+/*     flex-direction: row; 수평 방향으로 정렬 */
+/*   border: 1px solid black; */
+  }
+  
+
+
+.fab, .fas {
+  font-size: 30px;
+  margin: 0px 0px 0px 20px;
+  width:35px;
+}
+
+.infomation-span{
+  font-size: 16px; 
+/*   background-color: #f0f0f0;  */
+}
+
+.vertical-line {
+  border-left: 2px solid rgb(200, 200, 190);
+  margin: 0px 40px 0px 15px;
+  font-size: 30px;
+  
+}
+
+
+
+
+  /* ----------------------skills------------------- */
+#skills-section {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+#skills-container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+display: flex;
+flex-direction: column; 
+justify-content: flex-start; 
+align-items: center; 
+}
+
+#skills-h2-div {
+width: 90%;
+}
+
+.skills-content-div {
+  width:800px;
+  height:80%;
+  background:rgb(240, 240, 240);
+
+  display: grid;
+  align-items: start; 
+  justify-content: center;
+  gap: 50px 90px; 
+
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+
+  /* grid-template-rows: repeat(3, minmax(300px, auto)); */
+}
+
+.skills-list-div {
+  width: 100%; 
+  height: 100%; 
+  background-color: white;
+
+  display: grid;
+  place-items: center; 
+  align-items: center;
+  text-align: center;
+
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  padding-bottom: 40px;
+}
+
+
+.skills-title-div {
+    text-align: left;
+    border-bottom: 1px solid rgb(200, 200, 190);
+    width: 80%;
+    padding-bottom: 6px;
+    margin-top: 10px;
+
+}
+
+.skills-title-span {
+  font-size: 1.9rem;
+
+  font-weight: 700;
+  color: rgb(140, 195, 180);
+
+
+}
+
+
+
+#skills1 {
+      width: 100%; 
+    height: 100%;
+    
+    text-align: center;
+}
+#skills2 {
+    width: 100%; 
+    height: 950px;
+    
+    text-align: center;
+    grid-row: auto / span 3;
+
+  }
+  #skills3 {
+    width: 100%; 
+    height: 100%;
+    
+    text-align: center;
+    
+  }
+  #skills4 {
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    
+  }
+
+.icon-class {
+    width: 80%;
+    height: 50%;
+  }
+
+#title2 {
+  /* margin-top: -5px; */
+}
+
+
+  /* ----------------------portfolio------------------- */
+
+  
+  
+  #portfolio-section {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+  }
+  #portfolio-container{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .develope-content-div {
+    width:1300px;
+    /* height:400px; */
+
+       display: grid;
+       grid-template-columns: repeat(1, 1fr); 
+       grid-template-rows: repeat(auto-fit, min-content); /* 반응형 그리드 설정 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px; /* 그리드 아이템 사이의 간격 */
+ 
+    justify-items: center; /* 수평 정렬 */
+
+  /* border: 1px solid white; */
+/* border-radius: 10px; */
+   /* box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%); */
+/* background-color: white; */
+row-gap:150px;
+margin-bottom: 100px;
+
+}
+
+.develope-list-div {
+    width: 70%; 
+    height: 120%; 
+  display: grid;
+  place-items: center; 
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+   border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+  background-color: white;
+  }
+ 
+.develop-title-div {
+    width: 85%; 
+    height: 60%;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid rgb(200, 200, 190);
+
+
+}
+/* .develop-border-line {
+  width: 85%; 
+  margin: 15px auto; 
+
+} */
+
+.develope-title-span {
+font-size: 1.6rem;
+font-weight: 800;
+}
+
+.develope-period-span {
+font-size: 1rem;
+}
+
+.develop-img-div {
+  /* border: 1px solid gray;   */
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+    width: 100%; 
+    height: 100%; 
+    padding: 0px 10px 10px 10px;
+}
+
+.test-img {
+  width: 100%;
+  height: 100%;
+}
+
+.develop-summary-div {
+  width: 90%; 
+  height: 100%; 
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  padding: 5px;
+  border-bottom: 1px solid rgb(200, 200, 190);
+  /* margin: 10px 0px 0px 0px; */
+  /* background-color: red; */
+}
+
+.develop-link-container {
+  /* border: 1px solid gray;   */
+
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  width: 100%; 
+  height: 70%; 
+  
+  display: grid;
+  place-items: center; 
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(1, 1fr);
+  /* background-color: rgb(200, 200, 190); */
+
+}
+
+.develop-link-item{
+
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  width: 130px;
+  margin: 0px 10px;
+  cursor: pointer;
+  text-decoration: none; /* 선택 사항: 링크 밑줄 제거 */
+  color: inherit; /* 선택 사항: 기본 텍스트 색상 상속 */
+}
+
+#develop-demo{
+  /* background-color: rgb(191, 209, 248); */
+  background-color: rgb(166, 192, 248);
+
+
+}
+
+#develop-detail-readme{
+
+  background-color: rgb(121, 244, 190);
+
+}
+
+#develop-github{
+  background-color: rgb(244, 134, 165);
+
+}
+
+.develop-link-span {
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+}

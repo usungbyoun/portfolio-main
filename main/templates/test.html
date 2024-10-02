@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link href="{% static 'index/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'index/css/style2.css' %}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+<body>
+   
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <!-- <section class="testf"> -->
+
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>웹 개발 포트폴리오</h1>
+      <p class="info-p">안녕하세요.</br>      
+        백엔드 개발자를 꿈꾸고 있는 변우성입니다.</p>
+
+
+      <!-- <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div> -->
+      
+    </div>
+  </section>
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+<section id="about-section" class="about">
+  <div id="about-container" class="container" data-aos="fade-up"> <!--중앙정렬 -->
+
+    <div class="section-title">
+      <h2>About</h2>
+    </div>
+
+    <div class="infomation-content-div">
+
+      <div class="infomation-list-div" id="info1">
+        <div class="content-detail">
+          <i class="fas fa-user"></i>
+          <span class="vertical-line"></span>
+          <span class="infomation-span">변우성</span>
+        </div>
+      </div>
+            
+      <div class="infomation-list-div" id="info2">
+        <div class="content-detail">
+          <i class="fas fa-phone"></i>
+          <span class="vertical-line"></span>
+          <span class="infomation-span">010-7722-9077</span>
+        </div>
+      </div>
+            
+      <div class="infomation-list-div" id="info3">
+        <div class="content-detail">
+          <i class="fas fa-envelope"></i>
+          <span class="vertical-line"></span>
+          <span class="infomation-span">usung418@gmail.com</span>
+        </div>
+      </div>
+            
+      <div class="infomation-list-div" id="info4">
+        <div class="content-detail">
+          <i class="fas fa-graduation-cap"></i>
+          <span class="vertical-line"></span>
+          <span class="infomation-span">계명대학교 컴퓨터공학 졸업</span>
+        </div>
+      </div>
+            
+      <div class="infomation-list-div" id="info5">
+        <div class="content-detail">
+          <i class="fas fa-home"></i>
+          <span class="vertical-line"></span>
+          <span class="infomation-span">서울특별시 동작구</span>
+        </div>
+      </div>
+            
+      <div class="infomation-list-div" id="info6">
+        <div class="content-detail">
+
+          <i class="fab fa-github"></i>
+          <span class="vertical-line"></span>
+          <a href="https://github.com/usungbyoun">
+            <span class="infomation-span">https://github.com/usungbyoun</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- ======= skills Section ======= -->
+<section id="skills-section" class="facts">
+  <div id="skills-container" class="container" data-aos="fade-up">
+
+    <div class="section-title" id="skills-h2-div">
+      <h2>skills</h2>
+    </div>
+
+    <div class="skills-content-div">
+
+      <div class="skills-list-div" id="skills1">
+        <div class="skills-title-div">
+          <span class="skills-title-span">Frontend</span>
+        </div>
+
+        <div class="skills-img">
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/html_icon.png' %}" 
+          alt="html, css, js">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/react_icon.png' %}" 
+          alt="React">
+        </div>
+      </div>
+                    
+      <div class="skills-list-div" id="skills2">
+        <div class="skills-title-div" id="title2">
+          <span class="skills-title-span">Backend</span>
+        </div>
+
+        <div class="skills-img">
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/django_icon.png' %}" 
+          alt="Django">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/drf_icon.png' %}" 
+          alt="Django Rest Framework">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/sql_icon.png' %}" 
+          alt="PostgreSQL">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/nginx_icon.png' %}" 
+          alt="nginx">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/gunicorn_icon.png' %}" 
+          alt="gunicorn">
+        </div>
+      </div>
+                  
+      <div class="skills-list-div" id="skills3">
+        <div class="skills-title-div">
+          <span class="skills-title-span">Deployment</span>
+        </div>
+
+        <div class="skills-img">
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/aws_icon.png' %}" 
+          alt="AWS">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/docker_logo.png' %}" 
+          alt="Docker">
+        </div>
+      </div>
+                    
+      <div class="skills-list-div" id="skills4">
+        <div class="skills-title-div" id="title4">
+          <span class="skills-title-span">Version Control</span>
+        </div>
+
+        <div class="skills-img">
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/git_logo.png' %}" 
+          alt="git">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/github_icon.png' %}" 
+          alt="github">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/vscode_icon.png' %}" 
+          alt="vscode">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+   
+   
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio-section" class="portfolio section-bg">
+      <div id="portfolio-container" class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+        <!-- <img src="{% static 'index/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt=""> -->
+        
+        <div class="develope-content-div">
+
+          <div class="develope-list-div" id="develope1">
+            
+            <div class="develop-title-div">
+              <span class="develope-title-span">스크래핑 SNS(Django)</span>
+              <span class="develope-period-span">2023.10~ 2024.01</span>
+            </div>
+
+
+            
+            <div class="develop-img-div">
+              <!-- <img src="" alt="">img  -->
+              <img class="test-img" 
+              src="{% static 'index/img/skills-icon/github_icon.png' %}" 
+              alt="github">
+            </div>
+            
+            <div class="develop-summary-div">
+              <span>인스타그램과 유사한 게시글 기능이 있는 SNS 사이트입니다. 
+                웹 스크래핑(파싱)을 통해 원하는 이미지를 추가하여 게시글을 등록할 수 있습니다.
+                Django와 HTML, CSS, JS로 만들었습니다.    
+              </span>
+            </div>
+            
+            <div class="develop-link-container">
+              <a href="">
+                <div class="develop-link-item" id="develop-demo">
+                 <span class="develop-link-span">Go !</span> 
+                </div>
+              </a>
+
+              <a href="">
+                <div class="develop-link-item" id="develop-detail-readme">
+                  <span class="develop-link-span">프로젝트 소개</span>
+                </div>
+              </a>
+
+              <a href="">
+                <div class="develop-link-item" id="develop-github">
+                  <span class="develop-link-span">GitHub</span>
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+       
+       
+       <div class="develope-list-div" id="develope2">
+            
+            <div class="develop-title-div">
+              <span class="develope-title-span">스크래핑 SNS(Django Rest Framework)</span>
+              <span class="develope-period-span">2023.12~ 2024.03</span>
+            
+            </div>
+            
+            <div class="develop-img-div">
+              <img src="" alt="">img 
+            </div>
+            
+            <div class="develop-summary-div">
+              <span>인스타그램과 유사한 게시글 기능이 있는 SNS 사이트입니다. 
+                웹 스크래핑(파싱)을 통해 원하는 이미지를 추가하여 게시글을 등록할 수 있습니다.
+                Django와 HTML, CSS, JS로 만들었습니다.    
+              </span>
+
+            </div>
+            
+            <div class="develop-link-container">
+              <a href="">
+                <div class="develop-link-item" id="develop-demo">
+                  Go !
+                </div>
+              </a>
+
+              <a href="">
+                <div class="develop-link-item" id="develop-detail-readme">
+                  프로젝트 소개
+                </div>
+              </a>
+
+              <a href="">
+                <div class="develop-link-item" id="develop-github">
+                  GitHub
+                </div>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+</main>
+
+</body>
+</html>
