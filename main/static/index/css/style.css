@@ -1,5 +1,24 @@
 
 /*--------------------------------------------------------------
+# common part
+--------------------------------------------------------------*/
+
+.common-section {
+  height: 100%;
+  width: 100%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column; 
+  padding: 3.2rem 0;
+}
+
+.common-section, .skills-content-div, #main {
+  background:rgb(220, 230, 230);
+}
+
+
+/*--------------------------------------------------------------
 # top Section
 --------------------------------------------------------------*/
 
@@ -72,26 +91,6 @@
 
   .top-section .social-links a:hover {
     color: #0563bb;
-  }
-
-
-/*--------------------------------------------------------------
-# common part
---------------------------------------------------------------*/
-
-  .common-section {
-    height: 100%;
-    width: 100%;
-    background-color: rgb(240, 240, 240);
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    padding: 3.2rem 0;
-  }
-
-  #main {
-    background-color: rgb(240, 240, 240);
   }
 
 
@@ -201,7 +200,6 @@
   .skills-content-div {
     width:800px;
     height:80%;
-    background:rgb(240, 240, 240);
     display: grid;
     align-items: start; 
     justify-content: center;
