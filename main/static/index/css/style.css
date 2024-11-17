@@ -14,7 +14,9 @@
 }
 
 .common-section, .skills-content-div, #main {
-  background:rgb(220, 230, 230);
+  /* background:rgb(225, 235, 235); */
+  background:rgb(225, 225, 225);
+
 }
 
 
@@ -24,7 +26,7 @@
 
   .top-section {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background: url("/static/index/img/top-image/table.jpg") top right no-repeat;
     background-size: cover;
     position: relative;
