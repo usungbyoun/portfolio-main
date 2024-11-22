@@ -181,42 +181,32 @@
 # skills section
 --------------------------------------------------------------*/
 
-  #skills-container {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-  }
+
 
   .skills-content-div {
-    width:800px;
-    height:120%;
+    width: 900px;
     display: grid;
-    align-items: start; 
-    justify-content: center;
-    gap: 3.25rem; 
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1rem; 
+    grid-auto-flow: row dense; 
+    /* gap: 50px; */
+    column-gap: 5.1rem;  
+    /* row-gap: 60px;      */
     margin-bottom: 5rem;
-    /* border: 3px solid green; */
-
   }
 
   .skills-list-div {
-    width: 100%; 
-    height: 120%; 
-    background-color: white;
     display: grid;
     place-items: center; 
-    align-items: center;
     text-align: center;
+    grid-row: span var(--row-span, 1);
+    background-color: white;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
-    padding-bottom: 40px;
+    /* padding-bottom: 50px;  */
+    margin-bottom: 50px;
+
   }
 
   .skills-title-div {
@@ -234,38 +224,33 @@
   }
 
   #Frontend {
-    width: 100%; 
-    height: 80%;
-    text-align: center;
+    --row-span: 26;
+    --col-span: 1;
+    grid-column: 1;
   }
 
   #Backend {
-    width: 100%; 
-    height: 85%;
-
-    text-align: center;
-    grid-row: auto / span 2;
-
+    --row-span: 55;
+    --col-span: 1;
+    grid-column: 2;
   }
 
   #Deployment {
-    width: 100%; 
-    height: 80%;
-    text-align: center;
-    
+     --row-span: 36;
+     --col-span: 1;
+     grid-column: 1;
   }
 
   #Version-Control {
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    --row-span: 28;
+    --col-span: 1;
+    grid-column: 1;
     
   }
   #Storage {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    grid-row: auto / span 1;
+    --row-span: 27;
+    --col-span: 1;
+    grid-column: 2;
 
   }
   .icon-class {

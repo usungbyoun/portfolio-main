@@ -21,7 +21,7 @@ from .views import index, first_info
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', index),
     path('first-info', first_info),
     

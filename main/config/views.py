@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from pptx import Presentation
 
 def index(request):
     return render(request, "index.html")
