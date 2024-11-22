@@ -24,17 +24,9 @@
 # top Section
 --------------------------------------------------------------*/
 
-  .top-section {
-    width: 100vw;
-    height: 90vh;
-    background: url("/static/index/img/top-image/table.jpg") top right no-repeat;
-    background-size: cover;
-    position: relative;
-    
-  }
   .text-container {
     position: absolute; 
-    color: white;
+    color: red;
     transform: translate(18%, 130%); 
   }
 
@@ -201,19 +193,21 @@
 
   .skills-content-div {
     width:800px;
-    height:80%;
+    height:120%;
     display: grid;
     align-items: start; 
     justify-content: center;
-    gap: 6.25rem; 
+    gap: 3.25rem; 
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(3, 1fr);
     margin-bottom: 5rem;
+    /* border: 3px solid green; */
+
   }
 
   .skills-list-div {
     width: 100%; 
-    height: 100%; 
+    height: 120%; 
     background-color: white;
     display: grid;
     place-items: center; 
@@ -227,10 +221,10 @@
 
   .skills-title-div {
     text-align: left;
-    border-bottom: 1px solid rgb(200, 200, 190);
+    border-bottom: 2px solid rgb(180, 180, 170);
     width: 80%;
-    padding-bottom: 6px;
-    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
   }
 
   .skills-title-span {
@@ -239,37 +233,45 @@
     color: rgb(140, 195, 180);
   }
 
-  #skills1 {
+  #Frontend {
     width: 100%; 
-    height: 100%;
+    height: 80%;
     text-align: center;
   }
 
-  #skills2 {
+  #Backend {
     width: 100%; 
-    height: 950px;
+    height: 85%;
+
     text-align: center;
-    grid-row: auto / span 3;
+    grid-row: auto / span 2;
 
   }
 
-  #skills3 {
+  #Deployment {
     width: 100%; 
-    height: 100%;
+    height: 80%;
     text-align: center;
     
   }
 
-  #skills4 {
+  #Version-Control {
     width: 100%;
     height: 100%;
     text-align: center;
     
   }
+  #Storage {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    grid-row: auto / span 1;
 
+  }
   .icon-class {
     width: 80%;
     height: 50%;
+    margin-bottom: 1rem;
   }
 
 

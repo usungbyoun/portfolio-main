@@ -6,7 +6,7 @@ window.addEventListener("load", function() {
     setTimeout(function () {
       loadingScreen.style.opacity = '0'; //서서히 사라지는 효과
       loadingScreen.style.display = 'none';
-    }, 800);
+    }, 200);
 });
 
 

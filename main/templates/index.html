@@ -34,6 +34,16 @@
     </div>
   </section>
 
+  <style>
+    .top-section {
+      background: url("{% static 'index/img/top-image/table.jpg' %}") top right no-repeat;
+      width: 100%;
+      height: 90vh;
+      background-size: cover;
+      position: relative;
+    }
+  </style>
+
   <main id="main">
   <!-- ======= About Section ======= -->
   <section id="about-section" class="common-section">
@@ -105,7 +115,7 @@
     </div>
 
     <div class="skills-content-div">
-      <div class="skills-list-div" id="skills1">
+      <div class="skills-list-div" id="Frontend">
         <div class="skills-title-div">
           <span class="skills-title-span">Frontend</span>
         </div>
@@ -121,8 +131,8 @@
         </div>
       </div>
                     
-      <div class="skills-list-div" id="skills2">
-        <div class="skills-title-div" id="title2">
+      <div class="skills-list-div" id="Backend">
+        <div class="skills-title-div">
           <span class="skills-title-span">Backend</span>
         </div>
 
@@ -148,8 +158,8 @@
           alt="gunicorn">
         </div>
       </div>
-                  
-      <div class="skills-list-div" id="skills3">
+               
+      <div class="skills-list-div" id="Deployment">
         <div class="skills-title-div">
           <span class="skills-title-span">Deployment</span>
         </div>
@@ -165,8 +175,8 @@
         </div>
       </div>
                     
-      <div class="skills-list-div" id="skills4">
-        <div class="skills-title-div" id="title4">
+      <div class="skills-list-div" id="Version-Control">
+        <div class="skills-title-div">
           <span class="skills-title-span">Version Control</span>
         </div>
 
@@ -184,6 +194,25 @@
           alt="vscode">
         </div>
       </div>
+
+      <div class="skills-list-div" id="Storage">
+        <div class="skills-title-div">
+          <span class="skills-title-span">Storage</span>
+        </div>
+
+        <div class="skills-img">
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/cloudfront_logo.png' %}" 
+          alt="cloudfront">
+
+          <img class="icon-class" 
+          src="{% static 'index/img/skills-icon/s3_icon.png' %}" 
+          alt="s3">
+
+        </div>
+      </div>
+      
+
     </div>
   </section>
 
@@ -219,11 +248,11 @@
             </div>
           </a>
 
-          <!-- <a href="" class="develop-url-link">
+          <a href="http://localhost:8000/first-info" class="develop-url-link">
             <div class="develop-link-item" id="develop-detail-readme">
               <span class="develop-link-span">프로젝트 소개</span>
             </div>
-          </a> -->
+          </a>
 
           <a href="https://github.com/usungbyoun/portfolio-main" class="develop-url-link">
             <div class="develop-link-item" id="develop-github">
