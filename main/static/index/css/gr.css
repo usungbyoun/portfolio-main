@@ -1,0 +1,204 @@
+
+
+
+/* 모바일 환경 */
+@media (max-width: 768px) {
+
+    /* 공통 섹션 */
+    body {
+      box-sizing: border-box;
+    }
+
+    .common-section {
+      padding: 2rem 0;
+    }
+
+    .section-title h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.1rem;
+      padding-bottom: 0.9rem;
+    }
+
+
+    /* 상단 섹션 */
+    .top-section {
+      width: 100%;
+      height: 35vh;
+    }
+
+    .text-container {
+      position: absolute; 
+      transform: translate(8%, 180%); 
+    }
+
+    .top-section h1 {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .info-p {
+      font-size: 0.6rem;
+      line-height: 1rem;
+    }
+  
+
+    /* 정보 섹션 */
+    .infomation-content-div {
+      width: 90%;
+      height: 150%;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      padding: 1rem 0;
+    }
+
+    .infomation-list-div {
+      margin-bottom: 0.9rem;
+    }
+
+    .infomation-span{
+      /* text-decoration: none;  */
+      margin-left: 1rem;
+    }
+  
+    .vertical-line {
+      display: none;
+    }
+  
+
+    /* 기술 섹션 */
+    .skills-content-div {
+      width: 90%;
+      grid-auto-rows: 0.5rem; 
+      column-gap: 1.9rem; 
+      margin-bottom: 0rem;
+    }
+  
+    .skills-list-div {
+      padding-bottom: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .skills-title-div {
+      width: 80%;
+      padding-bottom: 0.4rem;
+      margin: 0.6rem 0;
+    }
+    
+    .skills-title-span {
+      font-size: 0.9rem;
+    }
+
+
+    /* 포트폴리오 섹션 */
+    .develope-content-div {
+      width: 100%;
+    }
+  
+    .develope-list-div {
+      width: 90%;
+      row-gap: 1.2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: auto auto; 
+      height: 100%; 
+    }
+  
+    .develop-title-div {
+      grid-column: 1 / 3; 
+      grid-row: 1; 
+      padding: 1rem;
+    }
+
+    .develope-title-span {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .develope-period-span {
+      font-size: 0.8rem;
+    }
+    .develop-img-div {
+      grid-column: 1; 
+      grid-row: 2;
+      width: 95%;
+      height: 80%;   
+      margin-left: 0rem;
+    }
+
+    .pastagram-info-img {
+      width: 100%;
+      height: 100%; 
+    }
+
+    .develop-summary-div {
+      grid-column: 2;
+      grid-row: 2;
+      width: 90%;
+      margin: auto;
+      height: 100%; 
+      border: none;
+    }
+
+    .develop-summary-span {
+      font-size: 0.7rem;
+      line-height: 0.7rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .develop-link-container {
+      width: 100%;
+      margin: auto;
+    }
+  
+    .develop-link-container {
+      grid-column: 1 / 3;
+      grid-row: 3; 
+      gap: 0.6rem;
+    }
+  
+    .develop-link-item {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    .develop-url-link {
+      width: 60%;
+      margin-right: 1rem;
+    }
+
+    .develop-link-span {
+        font-size: 0.7rem;
+      }
+
+    /* 푸터 섹션 */
+    #footer {
+      font-size: 1rem;
+      padding: 1.2rem 0.6rem;
+    }
+  }
+  
+  /* PC 환경 */
+  @media (min-width: 769px) {
+    .infomation-content-div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+  
+    .skills-content-div {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .develope-content-div {
+      width: 82rem;
+    }
+  
+    .develope-list-div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }

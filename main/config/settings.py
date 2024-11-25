@@ -130,17 +130,17 @@ AWS_S3_REGION_NAME = os.environ.get('AWS_S3_REGION_NAME')
 AWS_S3_CUSTOM_DOMAIN = os.environ.get('AWS_S3_CUSTOM_DOMAIN')
 
 # 정적 파일과 미디어 파일 저장 방식 지정
-STATICFILES_STORAGE = 'config.s3_storage.StaticStorage'
+# STATICFILES_STORAGE = 'config.s3_storage.StaticStorage'
 
-if DEBUG:
-    STATIC_URL = 'static/'
-else:
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/portfolio-main-bucket/static/'
+# if DEBUG:
+#     STATIC_URL = 'static/'
+# else:
+#     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/portfolio-main-bucket/static/'
+STATIC_URL = 'static/'
 
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
 
-# STATIC_ROOT = BASE_DIR / "staticfiles_main"
 
 
 # Default primary key field type
