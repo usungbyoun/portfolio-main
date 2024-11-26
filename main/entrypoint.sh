@@ -14,7 +14,7 @@ fi
 python manage.py flush --no-input
 python manage.py migrate
 
-python delet_s3_main.py
+python delete_s3_main.py
 python manage.py collectstatic --no-input --clear
 
 

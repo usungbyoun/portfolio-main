@@ -45,7 +45,7 @@ RUN addgroup --system app && adduser --system --group app
 ENV HOME=/home/app
 ENV APP_HOME=/home/app/web
 RUN mkdir $APP_HOME
-RUN mkdir $APP_HOME/staticfiles_main
+# RUN mkdir $APP_HOME/staticfiles_main
 WORKDIR $APP_HOME
 
 # install dependencies
@@ -57,15 +57,13 @@ COPY --from=builder /usr/src/app/requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install --no-cache /wheels/*
 
-COPY .env.prod $APP_HOME/.env.prod
-
-# copy entrypoint.sh
-COPY ./entrypoint.sh .
-RUN sed -i 's/\r$//g'  $APP_HOME/entrypoint.sh
-RUN chmod +x  $APP_HOME/entrypoint.sh
-
 # copy project
 COPY . $APP_HOME
+COPY .env.prod $APP_HOME/.env.prod
+
+COPY ./entrypoint.sh .
+RUN sed -i 's/\r$//g' $APP_HOME/entrypoint.sh
+RUN chmod +x $APP_HOME/entrypoint.sh
 
 # chown all the files to the app user
 RUN chown -R app:app $APP_HOME
