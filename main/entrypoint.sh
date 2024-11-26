@@ -13,8 +13,9 @@ fi
 
 python manage.py flush --no-input
 python manage.py migrate
+
+python delet_s3_main.py
 python manage.py collectstatic --no-input --clear
 
-python upload_to_s3.py
 
 exec "$@"
